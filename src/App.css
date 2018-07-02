@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,300i,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+body{
+    background-color: grey;
+}
+
+.pad-10 {
+    padding: 10px;
+}
+
+div.card {
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,.11), 0 5px 15px 0 rgba(0,0,0,.08);
+    text-align: center;
+    border-radius: .5rem;
+    border-color: #dae1e7;
+    -webkit-transition: opacity 0.2s ease-out;
+    -moz-transition: opacity 0.2s ease-out;
+    -o-transition: opacity 0.2s ease-out;
+    transition: opacity 0.2s ease-out;
+}
+
+div.card img {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: 0.5rem;
+    border-color: #dae1e7;
+}
+
+.card-translucent {
+    opacity: 0.5;
+}
+
+.card-subtitle {
+    padding-bottom: 30px;
+}
+
+.last-card {
+    margin-bottom: 60px;
+}
+
+.card-img-top {
+    min-height: 230px;
+    max-height: 230px;
+}
+
+.page-center {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+.lds-circle {
+    display: inline-block;
+    width: 51px;
+    height: 51px;
+    margin: 6px;
+    border-radius: 50%;
+    background: black;
+    animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  @keyframes lds-circle {
+    0%, 100% {
+      animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+    }
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(1800deg);
+      animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+    }
+    100% {
+      transform: rotateY(3600deg);
+    }
+  }
+
+.disabled {
+    background-color: grey;
+    color: black;
+}
+
+.enabled {
+    background-color: black;
+    color: white;    
+}
+
+.round {
+    border-radius: 50%;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+.vertical-center {
+    height: 100px;
+    line-height: 40px;
+    white-space: nowrap;
+}
+
+.table-responsive {
+    max-height: 345px;
+}
+
+.table {
+    overflow-y: scroll;
+}
