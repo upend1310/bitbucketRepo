@@ -17,12 +17,13 @@ class Body extends React.Component {
     } 
 
     componentDidMount() {
-        if(this.state.paramType == "category") {
-            var apiUrl= `https://newsapi.org/v2/top-headlines?${this.state.paramType}=${this.state.defaultParam}&country=in&apiKey=${API_KEY}`
+        var apiUrl;
+        if(this.state.paramType === "category") {
+            apiUrl= `https://newsapi.org/v2/top-headlines?${this.state.paramType}=${this.state.defaultParam}&country=in&apiKey=${API_KEY}`
         }
 
-        if(this.state.paramType == "country") {
-            var apiUrl= `https://newsapi.org/v2/top-headlines?${this.state.paramType}=${this.state.defaultParam}&apiKey=${API_KEY}`
+        if(this.state.paramType === "country") {
+            apiUrl= `https://newsapi.org/v2/top-headlines?${this.state.paramType}=${this.state.defaultParam}&apiKey=${API_KEY}`
         }
 
         fetch(apiUrl)
