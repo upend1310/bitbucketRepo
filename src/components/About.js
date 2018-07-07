@@ -12,7 +12,7 @@ const About = () => {
                     <CardBody>
                         <CardTitle>About Me</CardTitle>
                         <div className="min-height-200">
-                            <CardImg className="img-circle" src="../img/20180704_102834.jpg" alt="Upendra Kumar" />
+                            <CardImg className="img-circle" src={require('../img/me.jpg')} alt="Upendra Kumar" />
                         </div>
                         <CardText>
                             Upendra Kumar<br />
