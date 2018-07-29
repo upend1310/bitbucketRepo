@@ -65,7 +65,7 @@ class NewsCard extends React.Component {
         return(
             <div className="pad-10 last-card float-left">
                 <NewsInDetail href={this.state.sourceUrl} />
-                <Card className="float-left overflow-desk" id={"card-"+this.state.index} style={{height: this.state.cardHeight+'px'}}>
+                <Card className="float-left overflow-desk" id={"card-"+this.state.index} style={{minHeight: this.state.cardHeight+'px'}}>
                     <CardImg top width="100%" src={this.state.img_url} alt="Card image cap" />
                     <CardBody className="d-flex flex-column">
                         <CardTitle>{this.state.title}</CardTitle>
